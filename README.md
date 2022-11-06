@@ -34,4 +34,4 @@ npm run serve
 npm run build
 ```
 
-## [Посилання на сайт](https://news_api.vercel.app/)
+## [Посилання на сайт](https://news-api-taupe.vercel.app/)
