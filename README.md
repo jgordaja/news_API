@@ -16,7 +16,7 @@
 ## Clone project
 ```
 git clone https://github.com/jgordaja/news_API.git
-cd credit_card_src
+cd news_API
 ```
 
 ## Project setup
@@ -33,5 +33,4 @@ npm run serve
 ```
 npm run build
 ```
-
-## [Посилання на сайт](https://news-api-taupe.vercel.app/)
+``
