@@ -10,17 +10,12 @@
                 <ul class="nav">
                     <li class="nav__item">
                         <router-link to="/" class="nav__link" class-active="nav__link-activ">
-                            Home
-                        </router-link>
-                    </li>
-                    <li class="nav__item">
-                        <router-link to="/top" class="nav__link" class-active="nav__link-activ">
-                             Top News
+                             Top
                         </router-link>
                     </li>
                     <li class="nav__item">
                         <router-link to="/everything" class="nav__link" class-active="nav__link-activ">
-                            Everything News
+                            Everything
                         </router-link>
                     </li>
                 </ul>

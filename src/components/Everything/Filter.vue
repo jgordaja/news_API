@@ -48,7 +48,13 @@ export default {
         },
     },
     methods: {
-        ...mapMutations(['setSortBy', 'setDateFrom', 'setDateTo', 'setSearchPhraseNewsEverything', 'setStatusNewsEverything']),
+        ...mapMutations([
+            'setSortBy',
+            'setDateFrom',
+            'setDateTo',
+            'setSearchPhraseNewsEverything',
+            'setStatusNewsEverything'
+        ]),
         ...mapActions(['loadNewsEverything']),
         searchNews(searchPhrase) {
             this.setStatusNewsEverything(null);

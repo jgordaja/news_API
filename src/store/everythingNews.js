@@ -72,13 +72,11 @@ export default {
 
             axios.get(`${rootState.URL}${rootState.EVERYTHING}`, { params: params})
                 .then((response) => {
-                    console.log(response);
                     commit('setStatusNewsEverything', response.data.status);
                     commit('setNewsEverything', response.data.articles);
                     commit('setTotalResultsNewsEverything', response.data.totalResults);
                 })
                 .catch((error) => {
-                    console.log('error', error)
                     commit('setStatusNewsEverything', error.response.data.status);
                     commit('setMessageNewsEverything', error.response.data.message);
                 });

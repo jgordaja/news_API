@@ -1,8 +1,12 @@
 <template>
-    <img src="https://assets.awwwards.com/assets/redesign/images/pages/404/bg.jpg">
-    <button class="btn btn-info d-flex mx-auto justify-content-center mt-5 center-btn" @click="$router.back()">
-        Back
-    </button>
+    <div class="error-page">
+        <button
+            class="btn btn-info d-flex mx-auto justify-content-center mt-5 center-btn"
+            @click="$router.back()"
+        >
+            Back
+        </button>
+    </div>
 </template>
 
 <script>
@@ -12,15 +16,13 @@ export default {
 </script>
 
 <style scoped>
-    .error_img {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        -o-object-fit: cover;
-        object-fit: cover;
-        z-index: -1;
-        max-width: 100%;
+    .error-page {
+        height: 90vh;
+        width: 100vw;
+        background-image: url("https://assets.awwwards.com/assets/redesign/images/pages/404/bg.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 
     .center-btn {

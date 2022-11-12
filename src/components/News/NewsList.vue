@@ -7,7 +7,13 @@
                 </template>
             </div>
             <div class="paginator">
-                <Pagination v-model="page" :records="+totalResults" :per-page="9" @paginate="searchNews"/>
+                <Pagination
+                    v-model="page"
+                    :records="+totalResults"
+                    :per-page="9"
+                    :options="paginationOptions"
+                    @paginate="searchNews"
+                />
             </div>
         </div>
     </div>
@@ -31,6 +37,9 @@ export default {
     data() {
         return {
             page: 1,
+            paginationOptions: {
+                chunk: 3,
+            }
         }
     },
     computed: {

@@ -88,13 +88,11 @@ export default {
 
             axios.get(`${rootState.URL}${rootState.TOP_HEADLINES}`, { params: params})
                 .then((response) => {
-                    console.log(response);
                     commit('setStatusNewsTop', response.data.status);
                     commit('setNewsTop', response.data.articles);
                     commit('setTotalResultsNewsTop', response.data.totalResults);
                 })
                 .catch((error) => {
-                    console.log('error', error)
                     commit('setStatusNewsTop', error.response.data.status);
                     commit('setMessageNewsTop', error.response.data.message);
                 });
